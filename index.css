@@ -1,0 +1,69 @@
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: rgba(0, 0, 0, 0.925);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+  min-width: 100vw;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo {
+  text-align: center;
+  color: rgba(10, 224, 28, 0.918);
+  margin-top: 1rem;
+}
+
+.topsection {
+  margin-top: -5rem;
+}
+.header h1 {
+  color: rgba(0, 255, 0, 0.938);
+  display: flex;
+  justify-content: center;
+}
+
+.input,
+.datacontainer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.input input {
+  min-width: 40vw;
+  padding: 1rem;
+  outline: none;
+  border-radius: 1rem;
+}
+
+.data {
+  background: rgba(0, 0, 0, 0.596);
+  padding: 1.8rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.data span {
+  display: block;
+}
+
+.datacontainer .data h1 {
+  color: lime;
+}
+
+.datacontainer {
+  margin-top: 1.5rem;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  gap: 30px;
+  justify-items: center;
+}
